@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pixel Art Maker</h1>
+  <div class="row">
+    <div class="column">
+      <div class="inputs">
+        <h2>Choose grid size</h2>
+        <form id="sizePicker">
+          Grid Height:
+          <input type="number" id="inputHeight" name="height" value="25">
+          Grid Width:
+          <input type="number" id="inputWidth" name="width"  value="25">
+          <input type="submit" class="submit-button" value="submit">
+        </form>
+        <h2>Pick A color</h2>
+        <input type="color" id="colorPicker">
+      </div>
+    </div>
+    <div class="column">
+      <h2>Design Canvas</h2>
+      <table id="pixelCanvas"></table>
+      <br>
+    </div>
+  </div>
+  <script src="designs.js"></script>
+</body>
+</html>
